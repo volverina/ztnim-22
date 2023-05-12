@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="../aframe/aframe.min.js"></script>
+	</head>
+	<body>
+		<a-scene>
+			<a-assets>
+				<img id="sky" src="../assets/kris-guico-rsB-he-ye7w-unsplash.jpg">
+				<img id="owl" src="../assets/sova.png">
+			</a-assets>
+			<a-sky color="#dfeef1" src="#sky"></a-sky>
+			<a-plane width="9" height="2" position="3 1 -9"></a-plane>
+			<a-torus position="-2 1 -5" color="green" radius="1.2"></a-torus>
+			<a-text value="Щось українською!" font="../assets/custom-msdf/custom-msdf.json" negate="false" color="black" width="10" position="-0.5 1 -6"></a-text>
+			<a-plane width="7" height="7" rotation="-55 0 0" position="-2 -2 -5" color="purple"></a-plane>
+			<a-cylinder color="yellow" height="2" radius="0.05" position="-2 -1 -5"></a-cylinder>
+			<a-cylinder color="blue" height="2" radius="0.05" position="-3 -1 -5"></a-cylinder>
+			<a-torus-knot color="orange" radius="1.2" position="-3 1 -5"></a-torus-knot>
+			<a-sphere color="yellow" radius="5" position="1 4 -14.5" src="#owl"></a-sphere>
+		</a-scene>
+	</body>
+</html>
