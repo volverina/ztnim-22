@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.0/dist/mindar-image-aframe.prod.js"></script>
+	</head>
+	<body>
+		<a-scene mindar-image="imageTargetSrc: ../assets/targets.mind; maxTrack: 3" >
+
+		      <a-entity mindar-image-target="targetIndex: 0"> <!-- hiro -->
+				<a-sphere radius=0.5 color="green"></a-sphere>
+		      </a-entity>
+
+		      <a-entity mindar-image-target="targetIndex: 1"> <!-- kanji -->
+				<a-box color="blue" rotation="0 45 0"></a-box>
+		      </a-entity>
+
+		      <a-entity mindar-image-target="targetIndex: 2"> <!-- Kryvyi Rih -->
+				<a-plane width=0.2 height=0.4></a-plane>
+		      </a-entity>
+
+		<a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+		</a-scene>
+	</body>
+</html>
+
